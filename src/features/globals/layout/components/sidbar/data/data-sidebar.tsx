@@ -15,7 +15,7 @@ export const dataSidebar = [
     {
         iconDisabled: RiFolder5Line,
         label: "Meus Cursos",
-        href: "/courses/my-courses",
+        href: "/courses/my",
         iconEnabled: RiFolder5Fill
     },{
         iconDisabled: RiCameraLensAiLine,
