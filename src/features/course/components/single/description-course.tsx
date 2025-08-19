@@ -14,7 +14,7 @@ const DescriptionCourse = () => {
                 <div className="flex items-center gap-4">
                     <div className="*:data-[slot=avatar]:ring-background flex -space-x-3 *:data-[slot=avatar]:ring-2 *:data-[slot=avatar]:grayscale">
                         {Array.from({ length: 3 }).map((_, index) => (
-                            <div className="">
+                            <div className="" key={index}>
                                 <Image alt=''
                                     className='rounded-full'
                                     src={"https://avatars.githubusercontent.com/u/107747841?v=4"} width={30} height={30} />
