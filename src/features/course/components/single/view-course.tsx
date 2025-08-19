@@ -7,7 +7,7 @@ import PlaylistModule from '../player/playlist-module'
 import ContentCourse from './content-course'
 import { ScrollArea } from '@/features/globals/ui/components/scroll-area'
 
-const ViewCourse = ({ REF }: { REF: string }) => {
+const ViewCourse = ({  }: { REF: string }) => {
     return (
         <div className='grid grid-cols-3 gap-4'>
             <div className="col-span-2">

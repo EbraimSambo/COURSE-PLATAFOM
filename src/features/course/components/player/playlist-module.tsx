@@ -20,7 +20,7 @@ const PlaylistModule = () => {
                             <div className="space-y-4">
                                 {Array.from({ length: 13 }).map((_, index) => {
                                     return (
-                                        <div onClick={() => setValue(index)} className={`cursor-pointer relative ${index == value ? 'bg-muted-foreground/5':"hover:bg-muted-foreground/5"} p-4 rounded-2xl`}>
+                                        <div key={index} onClick={() => setValue(index)} className={`cursor-pointer relative ${index == value ? 'bg-muted-foreground/5':"hover:bg-muted-foreground/5"} p-4 rounded-2xl`}>
                                             <div className="flex items-center gap-4">
                                                 <div className="w-24 h-16 rounded-xl bg-muted-foreground/15 flex items-center justify-center">
                                                     <CircularProgress color='text-[#01a0fe]' value={index + 20} size={26} strokeWidth={4} />

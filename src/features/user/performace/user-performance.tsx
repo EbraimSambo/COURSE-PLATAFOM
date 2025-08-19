@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import React from 'react'
 import PointsUser from './partials/points-user'
 import ControlMonths from './partials/control-months'

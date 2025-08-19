@@ -1,5 +1,3 @@
-import { Input } from '@/features/globals/ui/components/input'
-import { RiSearch2Line,} from '@remixicon/react'
 import React from 'react'
 import NotificationButton from './partials/notification/notification-button'
 import UserMenu from './partials/user/user-menu'

@@ -1,4 +1,4 @@
-import {  RiCamera2Fill, RiCameraLensAiFill, RiCameraLensAiLine, RiFolder5Fill, RiFolder5Line, RiFunctionLine, RiLayoutGridFill, RiTvFill, RiTvLine } from "@remixicon/react";
+import {  RiCameraLensAiFill, RiCameraLensAiLine, RiFolder5Fill, RiFolder5Line, RiFunctionLine, RiLayoutGridFill, RiTvFill, RiTvLine } from "@remixicon/react";
 
 export const dataSidebar = [
     {
