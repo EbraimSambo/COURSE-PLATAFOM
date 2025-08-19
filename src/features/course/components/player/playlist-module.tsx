@@ -18,7 +18,7 @@ const PlaylistModule = () => {
                     <AccordionContent className='pt-0 mt-0'>
                         <ScrollArea className="h-[100%] w-full pt-4">
                             <div className="space-y-4">
-                                {Array.from({ length: 3 }).map((_, index) => {
+                                {Array.from({ length: 13 }).map((_, index) => {
                                     return (
                                         <div onClick={() => setValue(index)} className={`cursor-pointer relative ${index == value ? 'bg-muted-foreground/5':"hover:bg-muted-foreground/5"} p-4 rounded-2xl`}>
                                             <div className="flex items-center gap-4">

@@ -5,13 +5,12 @@ import DescriptionCourse from './description-course';
 
 const tabs = [
     { id: "overview", label: "Visão Geral", content: <DescriptionCourse /> },
-    { id: "discussions", label: "Discussões", content: "Aqui vai o perfil do usuário." },
-    { id: "comments", label: "Comentários", content: "Aqui vai as configs." },
+    { id: "questions", label: "Duvidas", content: "Aqui vai as configs." },
 ]
 const ContentCourse = () => {
     const [activeTab, setActiveTab] = React.useState(tabs[0].id);
     return (
-        <div className='mt-8'>
+        <div className='mt-6'>
             <div className="flex">
                 {tabs.map((tab) => (
                     <button
