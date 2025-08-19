@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-
+import { NuqsAdapter } from 'nuqs/adapters/next/pages'
 import { ThemeProvider as NextThemesProvider } from "next-themes"
 import { ProgressProvider } from '@bprogress/next/app';
 const AppProvider = ({
@@ -21,7 +21,9 @@ const AppProvider = ({
                 options={{ showSpinner: false }}
                 shallowRouting
             >
-                {children}
+                <NuqsAdapter>
+                    {children}
+                </NuqsAdapter>
             </ProgressProvider>
         </NextThemesProvider>
     )

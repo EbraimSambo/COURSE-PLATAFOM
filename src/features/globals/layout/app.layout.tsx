@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Sidebar from './components/sidbar/sidebar';
 import Header from './components/header/header';

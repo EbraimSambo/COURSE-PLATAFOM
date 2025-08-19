@@ -2,15 +2,16 @@
 import { Input } from '@/features/globals/ui/components/input'
 import { BProgress } from '@bprogress/core'
 import { RiSearch2Line } from '@remixicon/react'
-import { useRouter, useSearchParams } from 'next/navigation'
+import { useRouter } from 'next/navigation';
+import {  useQueryState } from "nuqs";
 import React from 'react'
 
 const SearchInputApp = () => {
     const router = useRouter()
-    const searchParams = useSearchParams()
+    const [searchParam, ] = useQueryState("q")
 
     const [searchQuery, setSearchQuery] = React.useState(
-        searchParams?.get("q") ?? ""
+        searchParam ?? ""
     )
 
     const searchApp = React.useCallback(
