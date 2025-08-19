@@ -2,6 +2,7 @@
 import React from 'react'
 
 import { ThemeProvider as NextThemesProvider } from "next-themes"
+import { ProgressProvider } from '@bprogress/next/app';
 const AppProvider = ({
     children,
 }: Readonly<{
@@ -14,7 +15,14 @@ const AppProvider = ({
             enableSystem
             disableTransitionOnChange
         >
-            {children}
+            <ProgressProvider
+                height="4px"
+                color="#01a0fe"
+                options={{ showSpinner: false }}
+                shallowRouting
+            >
+                {children}
+            </ProgressProvider>
         </NextThemesProvider>
     )
 }
