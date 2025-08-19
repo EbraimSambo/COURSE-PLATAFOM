@@ -15,7 +15,7 @@ const AppLayout = ({
             <div className="w-full h-full px-8">
                 <Header />
                 <Separator />
-                <main>
+                <main className='flex h-full w-full'>
                     <ScrollArea className="h-[91vh] w-full pt-4">
                         {children}
                     </ScrollArea>

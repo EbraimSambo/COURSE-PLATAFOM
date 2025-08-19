@@ -9,7 +9,7 @@ import { usePathname } from 'next/navigation'
 const Sidebar = () => {
     const pathName = usePathname()
     return (
-        <aside className='flex justify-between flex-col w-[80px] py-5 items-center bg-black'>
+        <aside className='flex justify-between flex-col w-[80px] py-5 items-center bg-background border-r'>
             <div className="flex flex-col items-center gap-8">
                 <Link href={"/"}>
                     <Image src={"/images/logo.png"} alt='LOGO-APP' height={35} width={35} />
