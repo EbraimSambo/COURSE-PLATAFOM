@@ -3,7 +3,7 @@ import React from 'react'
 
 const CourseProgress = () => {
   return (
-    <div className='pl-4 space-y-4'>
+    <div className='pl-4 space-y-4 sticky top-0 z-10 bg-background pb-2'>
       <div className="space-y-2">
         <h2 className='text-xl font-bold'>Praticas de Programação Orientada a Objetos </h2>
         <div className="flex items-center gap-2 text-sm">

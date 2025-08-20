@@ -12,7 +12,7 @@ const PlaylistModule = () => {
         <div className='px-8'>
             <Accordion className='' type="single" defaultValue="item-1">
                 <AccordionItem  className='' value="item-1">
-                    <AccordionTrigger className='hover:no-underline cursor-pointer pb-0'>
+                    <AccordionTrigger className='hover:no-underline cursor-pointer pb-0 '>
                         <h2 className='text-lg font-semibold'>Modulo 2</h2>
                     </AccordionTrigger>
                     <AccordionContent className='pt-0 mt-0'>

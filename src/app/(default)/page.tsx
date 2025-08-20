@@ -5,9 +5,10 @@ import SuggestCourse from "@/features/home/components/suggest-course";
 
 export default function Home() {
   return (
-    <div className="space-y-">
-      <MyCourse />
-      <SuggestCourse  />
-    </div>
+      <div className="space-y-8">
+        <MyCourse />
+        <SuggestCourse />
+        <SuggestCourse />
+      </div>
   );
 }
