@@ -1,11 +1,9 @@
-import CardCourse from '@/features/course/components/card/card-course'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/features/globals/ui/components/carousel'
 import React from 'react'
 
-const MyCourse = () => {
+const TopicsCourse = () => {
     return (
-        <section className='px-4'>
-              <h2 className='pl-[4%] text-2xl font-bold'>Seus cursos </h2>
+        <div className='my-4'>
             <Carousel
                 opts={{
                     align: "start",
@@ -13,10 +11,10 @@ const MyCourse = () => {
                 className='max-w-[95%] mx-auto'
             >
                 <CarouselContent>
-                    {Array.from({ length: 8 }, (_, i) => (
-                        <CarouselItem className="md:basis-1/2 lg:basis-1/4" key={i}>
+                    {Array.from({ length: 18 }, (_, i) => (
+                        <CarouselItem className="md:basis-1/2 lg:basis-1/12" key={i}>
                             <div className="pl-1">
-                                <CardCourse course={{ isSubscript: true }}/>
+                                Topic {i}
                             </div>
                         </CarouselItem>
                     ))}
@@ -24,8 +22,8 @@ const MyCourse = () => {
                 <CarouselPrevious className='cursor-pointer' />
                 <CarouselNext className='cursor-pointer' />
             </Carousel>
-        </section>
+        </div>
     )
 }
 
-export default MyCourse
+export default TopicsCourse

@@ -16,7 +16,7 @@ const ButtonBack = () => {
     }, [router])
 
     return (
-        <Button onClick={goBack} className='fixed bottom-4 left-28 rounded-full h-12 w-12 p-0 cursor-pointer flex items-center justify-center'>
+        <Button onClick={goBack} className='fixed bottom-4 left-23 rounded-full h-12 w-12 p-0 cursor-pointer flex items-center justify-center'>
             <RiArrowLeftLine />
         </Button>
     )
