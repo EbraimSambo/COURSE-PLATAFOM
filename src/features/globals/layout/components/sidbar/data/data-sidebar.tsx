@@ -20,7 +20,7 @@ export const dataSidebar = [
     },{
         iconDisabled: RiCameraLensAiLine,
         label: "Studio",
-        href: "/courses/my-courses",
+        href: "/studio",
         iconEnabled: RiCameraLensAiFill
     },
    

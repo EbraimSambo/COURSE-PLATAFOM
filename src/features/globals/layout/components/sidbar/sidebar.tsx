@@ -17,8 +17,8 @@ const Sidebar = () => {
                 <ul className='space-y-4'>
                     {dataSidebar.map((item) => {
                         return (
-                            <li key={item.label} className='w-full'>
-                                <Link href={item.href}>
+                            <li key={item.label} className='hover:scale-90 transition-all'>
+                                <Link href={item.href} className={``}>
                                     {pathName == item.href ? <item.iconEnabled /> : <item.iconDisabled />}
                                 </Link>
                             </li>
